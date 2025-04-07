@@ -29,8 +29,23 @@
         .footer-top a { color: #9CA3AF; transition: color 0.3s ease; }
         .footer-top a:hover { color: #ffffff; }
         .footer-bottom { background-color: #1F2937; padding: 1rem 0; color: #9CA3AF; }
-        .team-member-card img { aspect-ratio: 1 / 1; object-fit: cover; width: 100%; }
-        .team-member-card { transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+        .team-member-card img { aspect-ratio: 1 / 1; object-fit: cover; width: 100%; flex-shrink: 0; /* Prevent image shrinking */}
+        /* Styles for making team cards equal height */
+        .team-member-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            height: 100%; /* Make anchor take full grid item height */
+            display: flex; /* Use flexbox for internal alignment */
+            flex-direction: column; /* Stack image and text vertically */
+         }
+         .team-member-card > div {
+             flex-grow: 1; /* Allow the text div to grow */
+             display: flex;
+             flex-direction: column; /* Stack title, text, learn more */
+         }
+         .team-member-card .mt-auto {
+             margin-top: auto; /* Push learn more span to bottom */
+         }
+         /* End equal height styles */
         .team-member-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); }
         .team-hero-bg { background-image: url('images/Managers_Drawing_Business_Graph_original_527099.jpg'); background-size: cover; background-position: center center; position: relative; }
         .hero-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(108, 160, 220, 0.15); z-index: 1; }
@@ -145,23 +160,29 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-[#002D62] text-center mb-12">Meet Our Leadership</h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-x-16 lg:max-w-4xl lg:mx-auto">
 
-                   <div class="hidden lg:block"></div>
-
-                   <div class="w-full">
+                    <div class="w-full">
                        <a href="team-benjamin-mceachin.html" class="team-member-card group block bg-white rounded-lg shadow-lg overflow-hidden">
-                           <img src="images/PastedGraphic-1.jpg" alt="Benjamin F. McEachin Headshot">
-                           <div class="p-6 text-center">
+                           <img src="images/Ben.png" alt="Benjamin F. McEachin Headshot">
+                           <div class="p-6 text-center flex-grow flex flex-col"> 
                                <h3 class="text-xl font-semibold text-[#002D62] mb-1">Benjamin F. McEachin</h3>
                                <p class="text-base text-[#4B5C6B] font-medium">Chief Executive Officer</p>
-                               <span class="inline-block text-sm text-[#6CA0DC] opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">Learn More →</span>
+                               <span class="mt-auto inline-block text-sm text-[#6CA0DC] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pt-2">Learn More →</span> 
                            </div>
                        </a>
-                   </div>
+                    </div>
 
-                    <div class="hidden lg:block"></div>
-
+                    <div class="w-full">
+                          <a href="team-doug-stock.html" class="team-member-card group block bg-white rounded-lg shadow-lg overflow-hidden">
+                             <img src="images/doug.png" alt="Doug Stock Headshot">
+                              <div class="p-6 text-center flex-grow flex flex-col"> 
+                                  <h3 class="text-xl font-semibold text-[#002D62] mb-1">Doug Stock</h3>
+                                 <p class="text-base text-[#4B5C6B] font-medium">President and COO</p>
+                                 <span class="mt-auto inline-block text-sm text-[#6CA0DC] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pt-2">Learn More →</span>
+                              </div>
+                          </a>
+                     </div>
 
                 </div>
             </div>
