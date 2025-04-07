@@ -8,10 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
+
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #F4F4F4; }
         .header { display: flex; justify-content: space-between; align-items: flex-end; padding: 0.5rem 2rem; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 50; width: 100%; }
         .header-logo { height: 150px; width: auto; }
+        .footer-logo { height: 150px; width: auto; } /* Footer logo size */
         .header-nav-wrapper { display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem; margin-bottom: 0.5rem; }
         .header-nav-main { display: flex; align-items: center; gap: 1.5rem; }
         .header-nav-list { display: flex; gap: 1.5rem; }
@@ -22,10 +29,9 @@
         .footer-top a { color: #9CA3AF; transition: color 0.3s ease; }
         .footer-top a:hover { color: #ffffff; }
         .footer-bottom { background-color: #1F2937; padding: 1rem 0; color: #9CA3AF; }
-        /* Alternating section background styling */
+        /* Alternating background needs to target sections inside main */
         main section:nth-child(odd) .service-block-container { background-color: #ffffff; }
-        main section:nth-child(even) .service-block-container { background-color: #F9FAFB; } /* Slightly off-white */
-
+        main section:nth-child(even) .service-block-container { background-color: #F9FAFB; }
     </style>
 </head>
 
@@ -75,10 +81,11 @@
         </section>
 
          <section>
-             <div class="py-16 md:py-20 bg-white"> 
+             <div class="service-block-container py-16 md:py-20"> {/* Use container for background */}
                  <div class="container mx-auto px-4">
                      <div class="grid md:grid-cols-2 gap-12 items-center">
                          <div class="text-center">
+                             {/* Adjusted icon size */}
                             <span class="iconify inline-block text-[10rem] text-[#0052A5] mb-4" data-icon="mdi:shield-lock"></span>
                          </div>
                          <div class="text-center md:text-left">
@@ -92,6 +99,7 @@
                                  <li>Hardware Acquisition & Planning</li>
                              </ul>
                              <div>
+                                 {/* Updated Button Links */}
                                  <a href="contact-us.html" class="inline-block bg-[#6CA0DC] hover:bg-[#0052A5] text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out">
                                      Secure Your Systems
                                  </a>
@@ -103,7 +111,7 @@
          </section>
 
          <section>
-             <div class="py-16 md:py-20 bg-gray-50"> 
+              <div class="service-block-container py-16 md:py-20"> {/* Use container for background */}
                 <div class="container mx-auto px-4">
                     <div class="grid md:grid-cols-2 gap-12 items-center">
                         <div class="text-center md:text-left order-2 md:order-1">
@@ -117,12 +125,14 @@
                                 <li>Knowledge Management Solutions</li>
                              </ul>
                              <div>
+                                 {/* Updated Button Links */}
                                 <a href="contact-us.html" class="inline-block bg-[#6CA0DC] hover:bg-[#0052A5] text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out">
                                      Ensure Compliance
                                  </a>
                              </div>
                         </div>
                          <div class="text-center order-1 md:order-2">
+                             {/* Adjusted icon size */}
                              <span class="iconify inline-block text-[10rem] text-[#0052A5] mb-4" data-icon="mdi:archive-check"></span>
                         </div>
                      </div>
@@ -131,10 +141,11 @@
          </section>
 
         <section>
-             <div class="py-16 md:py-20 bg-white"> 
+            <div class="service-block-container py-16 md:py-20"> {/* Use container for background */}
                 <div class="container mx-auto px-4">
                     <div class="grid md:grid-cols-2 gap-12 items-center">
                          <div class="text-center">
+                             {/* Adjusted icon size */}
                              <span class="iconify inline-block text-[10rem] text-[#0052A5] mb-4" data-icon="mdi:finance"></span>
                          </div>
                         <div class="text-center md:text-left">
@@ -149,6 +160,7 @@
                                 <li>Tailored Training Development</li>
                              </ul>
                              <div>
+                                  {/* Updated Button Links */}
                                   <a href="contact-us.html" class="inline-block bg-[#6CA0DC] hover:bg-[#0052A5] text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out">
                                      Achieve Your Mission
                                   </a>
@@ -159,7 +171,7 @@
             </div>
         </section>
 
-         <section id="contact" class="py-16 bg-gray-50 text-center"> 
+         <section id="contact" class="py-16 bg-gray-50 text-center"> {/* Updated background */}
              <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-semibold text-[#002D62] mb-4">Ready to Enhance Your Agency's Performance?</h2>
                  <p class="text-lg text-[#4B5C6B] max-w-3xl mx-auto mb-8">
@@ -180,7 +192,7 @@
                 <div class="flex flex-wrap lg:flex-nowrap items-center justify-between gap-8">
                    <div class="logo-column text-center lg:text-left w-full lg:w-auto mb-6 lg:mb-0">
                        <a href="/" aria-label="Go to home page" title="Go to home page" class="inline-block">
-                             <img src="images/Logo.png" alt="Deceris Logo Light" class="h-10">
+                             <img src="images/Logo.png" alt="Deceris Logo Light" class="footer-logo">
                         </a>
                    </div>
                     <div class="links-column w-full lg:w-auto">

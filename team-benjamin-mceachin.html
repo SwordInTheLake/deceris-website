@@ -8,10 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
+
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #F4F4F4; }
         .header { display: flex; justify-content: space-between; align-items: flex-end; padding: 0.5rem 2rem; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 50; width: 100%; }
         .header-logo { height: 150px; width: auto; }
+        .footer-logo { height: 150px; width: auto; }
         .header-nav-wrapper { display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem; margin-bottom: 0.5rem; }
         .header-nav-main { display: flex; align-items: center; gap: 1.5rem; }
         .header-nav-list { display: flex; gap: 1.5rem; }
@@ -38,7 +45,6 @@
              <div class="header-nav-main">
                 <nav class="header-nav-list">
                     <a href="index.html" class="text-2xl">Home</a>
-                    {/* Mark About Us active because this is a sub-page of About */}
                     <a href="about.html" class="active text-2xl">About Us</a>
                     <a href="services.html" class="text-2xl">Services</a>
                     <a href="past-performance.html" class="text-2xl">Past Performance</a>
@@ -94,7 +100,7 @@
                 <div class="flex flex-wrap lg:flex-nowrap items-center justify-between gap-8">
                    <div class="logo-column text-center lg:text-left w-full lg:w-auto mb-6 lg:mb-0">
                        <a href="/" aria-label="Go to home page" title="Go to home page" class="inline-block">
-                             <img src="images/Logo.png" alt="Deceris Logo Light" class="h-10">
+                             <img src="images/Logo.png" alt="Deceris Logo Light" class="footer-logo">
                         </a>
                    </div>
                     <div class="links-column w-full lg:w-auto">
@@ -129,7 +135,6 @@
     </footer>
 
      <script>
-        // Optionally: Highlight the 'About Us' nav link as this is a sub-page
          document.addEventListener('DOMContentLoaded', () => {
              const navLinks = document.querySelectorAll('.header-nav-list a');
              const aboutLink = document.querySelector('.header-nav-list a[href="about.html"]');
@@ -137,7 +142,7 @@
              navLinks.forEach(link => { link.classList.remove('active'); });
 
              if (aboutLink) {
-                 aboutLink.classList.add('active'); // Highlight "About Us" on the nav bar
+                 aboutLink.classList.add('active');
              }
          });
      </script>
