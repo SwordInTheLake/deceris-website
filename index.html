@@ -18,7 +18,7 @@
         body { font-family: 'Inter', sans-serif; background-color: #F4F4F4; }
         .header { display: flex; justify-content: space-between; align-items: flex-end; padding: 0.5rem 2rem; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 50; width: 100%; }
         .header-logo { height: 150px; width: auto; }
-        .footer-logo { height: 150px; width: auto; } /* Ensure consistent footer logo size via class */
+        .footer-logo { height: 150px; width: auto; }
         .header-nav-wrapper { display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem; margin-bottom: 0.5rem; }
         .header-nav-main { display: flex; align-items: center; gap: 1.5rem; }
         .header-nav-list { display: flex; gap: 1.5rem; }
@@ -41,13 +41,12 @@
         .hero-overlay-content { position: relative; z-index: 2; background-color: rgba(0, 45, 98, 0.3); padding: 6rem 1rem; width: 100%; min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
         .text-shadow-subtle { text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
         .service-block-container { background-color: #ffffff; }
-         main section:nth-child(odd) .service-block-container { background-color: #ffffff; } /* White for sections in main */
-         main section:nth-child(even) .service-block-container { background-color: #F9FAFB; } /* Off-white for sections in main */
+        main section:nth-child(odd) .service-block-container { background-color: #ffffff; }
+        main section:nth-child(even) .service-block-container { background-color: #F9FAFB; }
     </style>
 </head>
 
 <body class="bg-background-light-gray">
-
     <header class="header">
         <a href="index.html" class="header-logo-link">
             <img src="images/Logo.png" alt="Deceris Logo" class="header-logo">
@@ -100,122 +99,122 @@
         <section class="py-16">
             <div class="service-block-container rounded-lg shadow-lg py-12 md:py-16">
                 <h2 class="text-3xl font-semibold text-[#002D62] text-center mb-12">Our Core Capabilities</h2>
-                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-4">
                      <div class="capability-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border-t-4 border-[#002D62]">
                          <span class="iconify text-5xl text-[#002D62] mb-4" data-icon="mdi:laptop"></span>
-                         <h3 class="text-xl font-semibold text-[#4B5C6B] mb-2">Information Technology Solutions</h3>
-                         <p class="text-gray-600 flex-grow mb-4">Software development, cybersecurity, cloud solutions, data management, network engineering, and help desk support.</p>
-                         <a href="services.html#it-solutions" class="mt-auto text-[#002D62] hover:text-[#6CA0DC] font-medium transition duration-300">Learn More →</a>
+                         <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-2">Information Technology Solutions</h3>
+                         <p class="text-sm md:text-base text-gray-600 flex-grow mb-4">Software development, cybersecurity, cloud solutions, data management, network engineering, and help desk support.</p>
+                         <a href="services.html#it-solutions" class="mt-auto text-sm text-[#002D62] hover:text-[#6CA0DC] font-medium transition duration-300">Learn More →</a>
                      </div>
                      <div class="capability-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border-t-4 border-[#002D62]">
                          <span class="iconify text-5xl text-[#002D62] mb-4" data-icon="mdi:bullhorn-outline"></span>
-                         <h3 class="text-xl font-semibold text-[#4B5C6B] mb-2">Program Acquisitions, Strategic Communications, Outreach & Training</h3>
-                         <p class="text-gray-600 flex-grow mb-4">Acquisition planning, marketing, instructional design, web development, public affairs, and event management.</p>
-                         <a href="services.html#strategic-communications" class="mt-auto text-[#002D62] hover:text-[#6CA0DC] font-medium transition duration-300">Learn More →</a>
+                         <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-2">Program Acquisitions, Strategic Communications, Outreach & Training</h3>
+                         <p class="text-sm md:text-base text-gray-600 flex-grow mb-4">Acquisition planning, marketing, instructional design, web development, public affairs, and event management.</p>
+                         <a href="services.html#strategic-communications" class="mt-auto text-sm text-[#002D62] hover:text-[#6CA0DC] font-medium transition duration-300">Learn More →</a>
                      </div>
                      <div class="capability-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border-t-4 border-[#002D62]">
                          <span class="iconify text-5xl text-[#002D62] mb-4" data-icon="mdi:flask-outline"></span>
-                         <h3 class="text-xl font-semibold text-[#4B5C6B] mb-2">Scientific & Engineering Technical Assistance</h3>
-                         <p class="text-gray-600 flex-grow mb-4">R&D program management, GIS, modeling & simulation, decision support systems, and technology transfer.</p>
-                         <a href="services.html#scientific-engineering" class="mt-auto text-[#002D62] hover:text-[#6CA0DC] font-medium transition duration-300">Learn More →</a>
+                         <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-2">Scientific & Engineering Technical Assistance</h3>
+                         <p class="text-sm md:text-base text-gray-600 flex-grow mb-4">R&D program management, GIS, modeling & simulation, decision support systems, and technology transfer.</p>
+                         <a href="services.html#scientific-engineering" class="mt-auto text-sm text-[#002D62] hover:text-[#6CA0DC] font-medium transition duration-300">Learn More →</a>
                      </div>
                      <div class="capability-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border-t-4 border-[#002D62]">
                          <span class="iconify text-5xl text-[#002D62] mb-4" data-icon="mdi:cog-outline"></span>
-                         <h3 class="text-xl font-semibold text-[#4B5C6B] mb-2">Program Management, Operations & Support</h3>
-                         <p class="text-gray-600 flex-grow mb-4">Needs assessment, strategic planning, compliance, M&E, facilities management, HR, workflow optimization, and logistics.</p>
-                         <a href="services.html#program-management" class="mt-auto text-[#002D62] hover:text-[#6CA0DC] font-medium transition duration-300">Learn More →</a>
+                         <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-2">Program Management, Operations & Support</h3>
+                         <p class="text-sm md:text-base text-gray-600 flex-grow mb-4">Needs assessment, strategic planning, compliance, M&E, facilities management, HR, workflow optimization, and logistics.</p>
+                         <a href="services.html#program-management" class="mt-auto text-sm text-[#002D62] hover:text-[#6CA0DC] font-medium transition duration-300">Learn More →</a>
                      </div>
                  </div>
              </div>
         </section>
 
-
-        <section class="py-16">
-            <div class="service-block-container rounded-lg shadow-lg py-12 md:py-16">
-                 <h2 class="text-3xl font-semibold text-[#002D62] text-center mb-12">Why Choose Deceris?</h2>
-                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 container mx-auto">
+        <section class="py-12 md:py-16">
+            <div class="service-block-container rounded-lg shadow-lg p-6 md:p-12">
+                 <h2 class="text-2xl md:text-3xl font-semibold text-[#002D62] text-center mb-8 md:mb-12">Why Choose Deceris?</h2>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4">
                        <div class="differentiator-card bg-white rounded-lg shadow-md p-6 flex items-start gap-4">
-                           <span class="iconify text-6xl text-[#002D62] mt-1" data-icon="mdi:flag-checkered"></span>
+                           <span class="iconify text-4xl md:text-5xl text-[#002D62] mt-1 flex-shrink-0" data-icon="mdi:flag-checkered"></span>
                            <div>
-                               <h3 class="text-xl font-semibold text-[#4B5C6B] mb-1">SDVOSB Certified</h3>
-                               <p class="text-gray-600">Proudly serving the nation as a verified Service-Disabled Veteran-Owned Small Business.</p>
+                               <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-1">SDVOSB Certified</h3>
+                               <p class="text-sm md:text-base text-gray-600">Proudly serving the nation as a verified Service-Disabled Veteran-Owned Small Business.</p>
                            </div>
                        </div>
                        <div class="differentiator-card bg-white rounded-lg shadow-md p-6 flex items-start gap-4">
-                           <span class="iconify text-6xl text-[#002D62] mt-1" data-icon="mdi:speedometer"></span>
+                           <span class="iconify text-4xl md:text-5xl text-[#002D62] mt-1 flex-shrink-0" data-icon="mdi:speedometer"></span>
                            <div>
-                               <h3 class="text-xl font-semibold text-[#4B5C6B] mb-1">Performance-Based Processes</h3>
-                               <p class="text-gray-600">Focused on delivering tangible, measurable results that meet your mission objectives.</p>
+                               <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-1">Performance-Based Processes</h3>
+                               <p class="text-sm md:text-base text-gray-600">Focused on delivering tangible, measurable results that meet your mission objectives.</p>
                            </div>
                        </div>
                       <div class="differentiator-card bg-white rounded-lg shadow-md p-6 flex items-start gap-4">
-                           <span class="iconify text-6xl text-[#002D62] mt-1" data-icon="mdi:account-group"></span>
+                           <span class="iconify text-4xl md:text-5xl text-[#002D62] mt-1 flex-shrink-0" data-icon="mdi:account-group"></span>
                           <div>
-                               <h3 class="text-xl font-semibold text-[#4B5C6B] mb-1">Integrated Solutions Teams</h3>
-                               <p class="text-gray-600">Seamlessly combining technology, business, and domain expertise for holistic solutions.</p>
+                               <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-1">Integrated Solutions Teams</h3>
+                               <p class="text-sm md:text-base text-gray-600">Seamlessly combining technology, business, and domain expertise for holistic solutions.</p>
                            </div>
                        </div>
                        <div class="differentiator-card bg-white rounded-lg shadow-md p-6 flex items-start gap-4">
-                           <span class="iconify text-6xl text-[#002D62] mt-1" data-icon="mdi:handshake"></span>
+                           <span class="iconify text-4xl md:text-5xl text-[#002D62] mt-1 flex-shrink-0" data-icon="mdi:handshake"></span>
                            <div>
-                               <h3 class="text-xl font-semibold text-[#4B5C6B] mb-1">Client-Focused Approach</h3>
-                              <p class="text-gray-600">Dedicated relationship management ensures we understand and meet your needs.</p>
+                               <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-1">Client-Focused Approach</h3>
+                              <p class="text-sm md:text-base text-gray-600">Dedicated relationship management ensures we understand and meet your needs.</p>
                            </div>
                        </div>
                        <div class="differentiator-card bg-white rounded-lg shadow-md p-6 flex items-start gap-4">
-                          <span class="iconify text-6xl text-[#002D62] mt-1" data-icon="mdi:briefcase-check"></span>
+                          <span class="iconify text-4xl md:text-5xl text-[#002D62] mt-1 flex-shrink-0" data-icon="mdi:briefcase-check"></span>
                           <div>
-                               <h3 class="text-xl font-semibold text-[#4B5C6B] mb-1">Proven Experience</h3>
-                              <p class="text-gray-600">Leveraging deep partner experience and successful engagements with diverse federal clients.</p>
+                               <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-1">Proven Experience</h3>
+                              <p class="text-sm md:text-base text-gray-600">Leveraging deep partner experience and successful engagements with diverse federal clients.</p>
                            </div>
                        </div>
                        <div class="differentiator-card bg-white rounded-lg shadow-md p-6 flex items-start gap-4">
-                           <span class="iconify text-6xl text-[#002D62] mt-1" data-icon="mdi:lightbulb-on-outline"></span>
+                           <span class="iconify text-4xl md:text-5xl text-[#002D62] mt-1 flex-shrink-0" data-icon="mdi:lightbulb-on-outline"></span>
                            <div>
-                               <h3 class="text-xl font-semibold text-[#4B5C6B] mb-1">Innovative Solutions</h3>
-                               <p class="text-gray-600">Applying a strategic mix of technology and business insight to solve complex challenges.</p>
+                               <h3 class="text-lg md:text-xl font-semibold text-[#4B5C6B] mb-1">Innovative Solutions</h3>
+                               <p class="text-sm md:text-base text-gray-600">Applying a strategic mix of technology and business insight to solve complex challenges.</p>
                            </div>
                        </div>
                   </div>
              </div>
         </section>
 
-          <section class="py-16 mt-12">
-              <h2 class="text-3xl font-semibold text-[#002D62] text-center mb-12">Trusted by Federal Agencies</h2>
+          <section class="py-16">
+              <div class="service-block-container rounded-lg shadow-lg py-12 md:py-16">
+                  <h2 class="text-2xl md:text-3xl font-semibold text-[#002D62] text-center mb-8 md:mb-12">Trusted by Federal Agencies</h2>
+                  <div class="logo-marquee-container relative w-full overflow-hidden bg-transparent py-8">
+                      <div class="logo-marquee-track flex animate-marquee whitespace-nowrap">
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0"> <img src="images/Army.png" alt="US Army Medical Service Logo" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0"> <img src="images/AirForce.png" alt="US Air Force Logo" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0"> <img src="images/Navy.png" alt="US Navy Logo" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0"> <img src="images/DISA.png" alt="Defense Information Systems Agency Logo" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0"> <img src="images/DoE.png" alt="Dept of Energy Logo" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0"> <img src="images/DoL.png" alt="Dept of Labor Logo" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0"> <img src="images/VA.png" alt="US Dept of Veterans Affairs Logo" class="client-logo h-12 md:h-16 lg:h-20"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0"> <img src="images/GSA.png" alt="General Services Administration Logo" class="client-logo h-12 md:h-16 lg:h-20"> </div>
 
-              <div class="logo-marquee-container relative w-full overflow-hidden bg-white py-8 shadow-lg rounded-lg">
-                 <div class="logo-marquee-track flex animate-marquee whitespace-nowrap">
-                       <div class="logo-item inline-block px-8 flex-shrink-0"> <img src="images/Army.png" alt="US Army Medical Service Logo" class="client-logo h-24 sm:h-32"> </div>
-                      <div class="logo-item inline-block px-8 flex-shrink-0"> <img src="images/AirForce.png" alt="US Air Force Logo" class="client-logo h-24 sm:h-32"> </div>
-                      <div class="logo-item inline-block px-8 flex-shrink-0"> <img src="images/Navy.png" alt="US Navy Logo" class="client-logo h-24 sm:h-32"> </div>
-                       <div class="logo-item inline-block px-8 flex-shrink-0"> <img src="images/DISA.png" alt="Defense Information Systems Agency Logo" class="client-logo h-24 sm:h-32"> </div>
-                      <div class="logo-item inline-block px-8 flex-shrink-0"> <img src="images/DoE.png" alt="Dept of Energy Logo" class="client-logo h-24 sm:h-32"> </div>
-                      <div class="logo-item inline-block px-8 flex-shrink-0"> <img src="images/DoL.png" alt="Dept of Labor Logo" class="client-logo h-24 sm:h-32"> </div>
-                      <div class="logo-item inline-block px-8 flex-shrink-0"> <img src="images/VA.png" alt="US Dept of Veterans Affairs Logo" class="client-logo h-16 sm:h-20"> </div>
-                       <div class="logo-item inline-block px-8 flex-shrink-0"> <img src="images/GSA.png" alt="General Services Administration Logo" class="client-logo h-16 sm:h-20"> </div>
-
-                      <div class="logo-item inline-block px-8 flex-shrink-0" aria-hidden="true"> <img src="images/Army.png" alt="" class="client-logo h-24 sm:h-32"> </div>
-                      <div class="logo-item inline-block px-8 flex-shrink-0" aria-hidden="true"> <img src="images/AirForce.png" alt="" class="client-logo h-24 sm:h-32"> </div>
-                       <div class="logo-item inline-block px-8 flex-shrink-0" aria-hidden="true"> <img src="images/Navy.png" alt="" class="client-logo h-24 sm:h-32"> </div>
-                       <div class="logo-item inline-block px-8 flex-shrink-0" aria-hidden="true"> <img src="images/DISA.png" alt="" class="client-logo h-24 sm:h-32"> </div>
-                      <div class="logo-item inline-block px-8 flex-shrink-0" aria-hidden="true"> <img src="images/DoE.png" alt="" class="client-logo h-24 sm:h-32"> </div>
-                      <div class="logo-item inline-block px-8 flex-shrink-0" aria-hidden="true"> <img src="images/DoL.png" alt="" class="client-logo h-24 sm:h-32"> </div>
-                      <div class="logo-item inline-block px-8 flex-shrink-0" aria-hidden="true"> <img src="images/VA.png" alt="" class="client-logo h-16 sm:h-20"> </div>
-                       <div class="logo-item inline-block px-8 flex-shrink-0" aria-hidden="true"> <img src="images/GSA.png" alt="" class="client-logo h-16 sm:h-20"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0" aria-hidden="true"> <img src="images/Army.png" alt="" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0" aria-hidden="true"> <img src="images/AirForce.png" alt="" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0" aria-hidden="true"> <img src="images/Navy.png" alt="" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0" aria-hidden="true"> <img src="images/DISA.png" alt="" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0" aria-hidden="true"> <img src="images/DoE.png" alt="" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0" aria-hidden="true"> <img src="images/DoL.png" alt="" class="client-logo h-16 md:h-24 lg:h-32"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0" aria-hidden="true"> <img src="images/VA.png" alt="" class="client-logo h-12 md:h-16 lg:h-20"> </div>
+                          <div class="logo-item inline-block px-6 md:px-8 flex-shrink-0" aria-hidden="true"> <img src="images/GSA.png" alt="" class="client-logo h-12 md:h-16 lg:h-20"> </div>
+                      </div>
+                  </div>
+                  <div class="text-center mt-8 md:mt-12">
+                      <button onclick="window.location.href='past-performance.html'"
+                          class="bg-[#002D62] hover:bg-[#00234d] text-white font-semibold py-2 px-6 md:py-3 md:px-8 rounded-md transition duration-300 ease-in-out text-base md:text-lg">
+                          View Our Past Performance
+                     </button>
                   </div>
               </div>
-               <div class="text-center">
-                  <button onclick="window.location.href='past-performance.html'"
-                      class="mt-12 bg-[#002D62] hover:bg-[#00234d] text-white font-semibold py-3 px-8 rounded-md transition duration-300 ease-in-out text-lg">
-                      View Our Past Performance
-                 </button>
-              </div>
           </section>
-      </main>
+     </main>
 
       <footer class="print:hidden" aria-label="Webpage Footer">
-          <div class="footer-top">
-              <div class="container mx-auto px-4">
+         <div class="footer-top">
+             <div class="container mx-auto px-4">
                   <div class="flex flex-wrap lg:flex-nowrap items-center justify-between gap-8">
                      <div class="logo-column text-center lg:text-left w-full lg:w-auto mb-6 lg:mb-0">
                           <a href="/" aria-label="Go to home page" title="Go to home page" class="inline-block">
@@ -223,7 +222,7 @@
                            </a>
                       </div>
                        <div class="links-column w-full lg:w-auto">
-                          <nav class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-center sm:text-left">
+                          <nav class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm footer-nav">
                                <div>
                                   <h4 class="font-semibold text-white mb-2 uppercase tracking-wider">Company</h4>
                                   <a href="about.html" class="block py-1">About Us</a>
@@ -251,22 +250,22 @@
                  </div>
              </div>
           </div>
-      </footer>
+     </footer>
 
        <script>
-          document.addEventListener('DOMContentLoaded', () => {
-              const navLinks = document.querySelectorAll('.header-nav-list a');
-              const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+           document.addEventListener('DOMContentLoaded', () => {
+               const navLinks = document.querySelectorAll('.header-nav-list a');
+               const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
              navLinks.forEach(link => {
                  const linkPage = new URL(link.href).pathname.split('/').pop() || 'index.html';
                   if (currentPage === linkPage) {
-                     link.classList.add('active');
+                      link.classList.add('active');
                   } else {
                       link.classList.remove('active');
                   }
-              });
-          });
+             });
+           });
       </script>
 
 </body>
