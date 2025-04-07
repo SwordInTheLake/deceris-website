@@ -15,35 +15,84 @@
     <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
 
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F4F4F4; padding-top: 80px; }
+        body { font-family: 'Inter', sans-serif; background-color: #F4F4F4; padding-top: 80px; /* Adjust as needed based on final header height */ }
 
         /* --- HEADER STYLES (Mobile First) --- */
         .header {
-            display: flex; flex-direction: column; align-items: center; padding: 1rem; background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 50; width: 100%;
+            display: flex;
+            flex-direction: column; /* Stack logo above nav */
+            align-items: center; /* Center items when stacked */
+            padding: 1rem; /* Adjust mobile padding */
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky; top: 0; z-index: 50; width: 100%;
         }
-        .header-logo { height: 100px; width: auto; margin-bottom: 0.75rem; }
-        .header-nav-wrapper { display: flex; flex-direction: column; align-items: center; width: 100%; gap: 0.5rem; }
-        .header-nav-main { display: flex; flex-direction: column; align-items: center; width: 100%; gap: 1rem; }
-        .header-nav-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.5rem; }
-        .header-nav-list a { color: #002D62; text-decoration: none; font-weight: 500; padding: 0.25rem 0; border-bottom: 2px solid transparent; transition: color 0.3s ease, border-color 0.3s ease; white-space: nowrap; }
-        .header-nav-list a:hover { color: #6CA0DC; }
-        .header-nav-list a.active { font-weight: 700; border-bottom-color: #6CA0DC; }
-        .button-contact { display: inline-block; width: auto; max-width: 90%; padding: 0.5rem 1.5rem; text-align: center; color: #ffffff; background-color: #002D62; border-radius: 0.375rem; font-weight: 600; transition: background-color 0.3s ease; white-space: nowrap; }
+        .header-logo {
+             height: 100px; /* Smaller logo on mobile */
+             width: auto;
+             margin-bottom: 0.75rem; /* Space below logo on mobile */
+        }
+        .header-nav-wrapper {
+             display: flex;
+             flex-direction: column; /* Stack main nav and CAGE code */
+             align-items: center; /* Center nav block and CAGE code */
+             width: 100%;
+             gap: 0.5rem; /* Space between nav block and CAGE code */
+        }
+        .header-nav-main {
+             display: flex;
+             flex-direction: column; /* Stack nav links and button */
+             align-items: center; /* Center nav links and button */
+             width: 100%;
+             gap: 1rem; /* Space between nav links and button */
+         }
+        .header-nav-list {
+            display: flex;
+            flex-wrap: wrap; /* Allow nav links to wrap if screen is tiny */
+            justify-content: center; /* Center nav links */
+            gap: 0.75rem 1.5rem; /* Row and column gap */
+        }
+        .header-nav-list a {
+             color: #002D62; text-decoration: none; font-weight: 500;
+             padding: 0.25rem 0; border-bottom: 2px solid transparent;
+             transition: color 0.3s ease, border-color 0.3s ease;
+             white-space: nowrap;
+        }
+         .header-nav-list a:hover { color: #6CA0DC; }
+         .header-nav-list a.active { font-weight: 700; border-bottom-color: #6CA0DC; }
+        .button-contact {
+             display: inline-block; width: auto; max-width: 90%;
+             padding: 0.5rem 1.5rem; text-align: center;
+             color: #ffffff; background-color: #002D62;
+             border-radius: 0.375rem; font-weight: 600;
+             transition: background-color 0.3s ease; white-space: nowrap;
+        }
         .button-contact:hover { background-color: #00234d; }
-        .header-cage-code { font-size: 0.7rem; font-weight: 600; color: #002D62; text-align: center; width: 100%; }
+        .header-cage-code {
+            font-size: 0.7rem; font-weight: 600; color: #002D62;
+            text-align: center; width: 100%;
+        }
 
         /* --- HEADER MEDIUM SCREENS & UP --- */
         @media (min-width: 768px) {
-            .header { flex-direction: row; justify-content: space-between; align-items: flex-end; padding: 0.5rem 2rem; }
+            .header {
+                flex-direction: row; justify-content: space-between; align-items: flex-end;
+                padding: 0.5rem 2rem;
+            }
             .header-logo { height: 150px; margin-bottom: 0; }
-            .header-nav-wrapper { flex-direction: column; align-items: flex-end; width: auto; gap: 0.25rem; margin-bottom: 0.5rem; }
-            .header-nav-main { flex-direction: row; width: auto; gap: 1.5rem; }
+            .header-nav-wrapper {
+                flex-direction: column; align-items: flex-end; width: auto;
+                gap: 0.25rem; margin-bottom: 0.5rem;
+            }
+             .header-nav-main {
+                flex-direction: row; width: auto; gap: 1.5rem;
+            }
             .header-nav-list { flex-wrap: nowrap; gap: 1.5rem; }
-            .header-nav-list a { padding: 0.5rem 0; }
-            .button-contact { width: auto; padding: 0.5rem 1.25rem; }
-            .header-cage-code { font-size: 0.75rem; text-align: right; width: auto; }
+             .header-nav-list a { padding: 0.5rem 0; }
+             .button-contact { width: auto; padding: 0.5rem 1.25rem; }
+             .header-cage-code { font-size: 0.75rem; text-align: right; width: auto; }
         }
+
 
         /* --- OTHER STYLES --- */
         .footer-logo { height: 150px; width: auto; }
@@ -51,19 +100,12 @@
         .footer-top a { color: #9CA3AF; transition: color 0.3s ease; }
         .footer-top a:hover { color: #ffffff; }
         .footer-bottom { background-color: #1F2937; padding: 1rem 0; color: #9CA3AF; }
-        .team-member-card img { aspect-ratio: 1 / 1; object-fit: cover; width: 100%; flex-shrink: 0; }
-        .team-member-card { transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; height: 100%; display: flex; flex-direction: column; }
-        .team-member-card > div { flex-grow: 1; display: flex; flex-direction: column; }
-        .team-member-card .mt-auto { margin-top: auto; }
-        .team-member-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); }
-        .team-hero-bg { background-image: url('images/Managers_Drawing_Business_Graph_original_527099.jpg'); background-size: cover; background-position: center center; position: relative; }
-        .hero-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(108, 160, 220, 0.15); z-index: 1; }
-        .team-hero-bg > .container { position: relative; z-index: 2; padding-top: 6rem; padding-bottom: 6rem; }
-        .text-shadow-sm { text-shadow: 0 1px 2px rgb(0 0 0 / 0.20); }
-        .text-shadow-md { text-shadow: 0 1px 3px rgb(0 0 0 / 0.45), 0 1px 2px rgb(0 0 0 / 0.30); }
-        .about-image-bg { background-image: url('images/notes.jpg'); background-size: cover; background-position: center center; position: relative; border-radius: 0.5rem; overflow: hidden; min-height: 400px; display: flex; align-items: center; justify-content: center; }
-        .about-image-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 45, 98, 0.45); z-index: 1; }
-        .about-image-bg > div.text-content-container { position: relative; z-index: 2; }
+        /* Specific Styles previously added (if needed) like bio, service block, etc. should also be consistent across relevant pages */
+        .bio-image { width: 100%; max-width: 300px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+        .bio-details li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
+        .bio-details li::before { content: '•'; color: #002D62; font-weight: bold; position: absolute; left: 0; top: 0.1em; }
+         /* Add other page-specific styles IF NEEDED, but header/footer should be consistent */
+
     </style>
 </head>
 
