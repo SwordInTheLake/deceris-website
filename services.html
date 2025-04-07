@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Deceris LLC - Federal Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F4F4F4; }
+        .header { display: flex; justify-content: space-between; align-items: flex-end; padding: 0.5rem 2rem; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 50; width: 100%; }
+        .header-logo { height: 150px; width: auto; }
+        .header-nav-wrapper { display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem; margin-bottom: 0.5rem; }
+        .header-nav-main { display: flex; align-items: center; gap: 1.5rem; }
+        .header-nav-list { display: flex; gap: 1.5rem; }
+        .header-nav-list a { color: #002D62; text-decoration: none; font-weight: 500; padding: 0.5rem 0; border-bottom: 2px solid transparent; transition: color 0.3s ease, border-color 0.3s ease; }
+        .header-nav-list a:hover { color: #6CA0DC; }
+        .header-nav-list a.active { color: #002D62; font-weight: 700; border-bottom-color: #6CA0DC; }
+        .footer-top { background-color: #374151; padding: 2rem 0; color: #D1D5DB; }
+        .footer-top a { color: #9CA3AF; transition: color 0.3s ease; }
+        .footer-top a:hover { color: #ffffff; }
+        .footer-bottom { background-color: #1F2937; padding: 1rem 0; color: #9CA3AF; }
+        /* Alternating section background styling */
+        main section:nth-child(odd) .service-block-container { background-color: #ffffff; }
+        main section:nth-child(even) .service-block-container { background-color: #F9FAFB; } /* Slightly off-white */
+
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <header class="header">
+         <a href="index.html" class="header-logo-link">
+             <img src="images/Logo.png" alt="Deceris Logo" class="header-logo">
+         </a>
+         <div class="header-nav-wrapper">
+              <div class="header-nav-main">
+                 <nav class="header-nav-list">
+                     <a href="index.html" class="text-2xl">Home</a>
+                     <a href="about.html" class="text-2xl">About Us</a>
+                     <a href="services.html" class="active text-2xl">Services</a>
+                     <a href="past-performance.html" class="text-2xl">Past Performance</a>
+                 </nav>
+                 <a href="contact-us.html"
+                    class="text-2xl bg-[#002D62] text-white font-semibold px-5 py-2 rounded-md hover:bg-[#00234d] transition duration-300 ease-in-out whitespace-nowrap">
+                     Contact Us
+                 </a>
+             </div>
+             <div class="text-xs font-semibold text-[#002D62]">
+                 CAGE: 61PV6 | DUNS: 962762477
+             </div>
+         </div>
+     </header>
+
+    <main>
+
+        <section class="bg-gradient-to-r from-[#002D62] to-[#0052A5] text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Consulting & Support Services</h1>
+                <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto opacity-90">
+                    Empowering Federal Agencies to Achieve Mission Success Through Strategic Expertise and Tailored Solutions.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+             <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-semibold text-[#002D62] mb-4">Driving Outcomes Through Expertise</h2>
+                 <p class="text-lg text-[#4B5C6B] max-w-4xl mx-auto leading-relaxed">
+                    Deceris delivers focused consulting and support designed to meet the unique operational, compliance, and strategic challenges faced by federal agencies. Our approach combines deep domain knowledge with innovative thinking to ensure efficiency, security, and mission accomplishment. Explore how we support key functional areas:
+                 </p>
+             </div>
+        </section>
+
+         <section>
+             <div class="py-16 md:py-20 bg-white"> 
+                 <div class="container mx-auto px-4">
+                     <div class="grid md:grid-cols-2 gap-12 items-center">
+                         <div class="text-center">
+                            <span class="iconify inline-block text-[10rem] text-[#0052A5] mb-4" data-icon="mdi:shield-lock"></span>
+                         </div>
+                         <div class="text-center md:text-left">
+                             <h3 class="text-3xl font-bold text-[#002D62] mb-4">Technology Modernization & Security</h3>
+                             <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                We provide comprehensive Information Technology and Information Assurance services designed to enhance operational capabilities while fortifying defenses against evolving threats. Our expertise ensures your systems are robust, compliant, and resilient.
+                             </p>
+                             <ul class="list-disc list-inside space-y-2 text-left text-lg text-gray-700 mb-6 inline-block">
+                                 <li>Information Technology Solutions</li>
+                                 <li>Information Assurance & Cyber Security Services</li>
+                                 <li>Hardware Acquisition & Planning</li>
+                             </ul>
+                             <div>
+                                 <a href="contact-us.html" class="inline-block bg-[#6CA0DC] hover:bg-[#0052A5] text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out">
+                                     Secure Your Systems
+                                 </a>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+             </div>
+         </section>
+
+         <section>
+             <div class="py-16 md:py-20 bg-gray-50"> 
+                <div class="container mx-auto px-4">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="text-center md:text-left order-2 md:order-1">
+                            <h3 class="text-3xl font-bold text-[#002D62] mb-4">Compliance, Governance & Information Management</h3>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                Navigating the complexities of federal regulations and effectively managing vast amounts of information is critical. Our services ensure adherence to standards like the Privacy Act and NARA guidelines, streamlining access and protecting sensitive assets.
+                            </p>
+                            <ul class="list-disc list-inside space-y-2 text-left text-lg text-gray-700 mb-6 inline-block">
+                                <li>Privacy Program Support</li>
+                                <li>Records & Document Management</li>
+                                <li>Knowledge Management Solutions</li>
+                             </ul>
+                             <div>
+                                  {/* Updated Button Links */}
+                                <a href="contact-us.html" class="inline-block bg-[#6CA0DC] hover:bg-[#0052A5] text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out">
+                                     Ensure Compliance
+                                 </a>
+                             </div>
+                        </div>
+                         <div class="text-center order-1 md:order-2">
+                             <span class="iconify inline-block text-[10rem] text-[#0052A5] mb-4" data-icon="mdi:archive-check"></span>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+        <section>
+             <div class="py-16 md:py-20 bg-white"> 
+                <div class="container mx-auto px-4">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                         <div class="text-center">
+                             <span class="iconify inline-block text-[10rem] text-[#0052A5] mb-4" data-icon="mdi:finance"></span>
+                         </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-3xl font-bold text-[#002D62] mb-4">Program Leadership & Operational Excellence</h3>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                From initial planning and assessment through execution and optimization, we provide the strategic oversight and practical support needed to manage complex federal programs effectively and improve operational performance.
+                             </p>
+                             <ul class="list-disc list-inside space-y-2 text-left text-lg text-gray-700 mb-6 inline-block">
+                                <li>Project Management Office (PMO) Support</li>
+                                <li>Program Planning & Strategy</li>
+                                <li>Business Consulting & Process Improvement</li>
+                                <li>Tailored Training Development</li>
+                             </ul>
+                             <div>
+                                  <a href="contact-us.html" class="inline-block bg-[#6CA0DC] hover:bg-[#0052A5] text-white font-semibold py-2 px-6 rounded-md transition duration-300 ease-in-out">
+                                     Achieve Your Mission
+                                  </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="contact" class="py-16 bg-gray-50 text-center"> {/* Matched alternating background */}
+             <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold text-[#002D62] mb-4">Ready to Enhance Your Agency's Performance?</h2>
+                 <p class="text-lg text-[#4B5C6B] max-w-3xl mx-auto mb-8">
+                    Contact Deceris today to discuss your specific challenges and learn how our tailored solutions can help you achieve your mission objectives with confidence and efficiency.
+                 </p>
+                 <a href="contact-us.html"
+                     class="bg-[#002D62] hover:bg-[#00234d] text-white font-semibold py-3 px-8 rounded-md transition duration-300 ease-in-out text-lg">
+                    Get In Touch
+                 </a>
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="print:hidden" aria-label="Webpage Footer">
+        <div class="footer-top">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap lg:flex-nowrap items-center justify-between gap-8">
+                   <div class="logo-column text-center lg:text-left w-full lg:w-auto mb-6 lg:mb-0">
+                       <a href="/" aria-label="Go to home page" title="Go to home page" class="inline-block">
+                             <img src="images/Logo.png" alt="Deceris Logo Light" class="h-10">
+                        </a>
+                   </div>
+                    <div class="links-column w-full lg:w-auto">
+                        <nav class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-center sm:text-left">
+                             <div>
+                                <h4 class="font-semibold text-white mb-2 uppercase tracking-wider">Company</h4>
+                                <a href="about.html" class="block py-1">About Us</a>
+                               <a href="contact-us.html" class="block py-1">Contact Us</a>
+                            </div>
+                             <div>
+                               <h4 class="font-semibold text-white mb-2 uppercase tracking-wider">Services</h4>
+                                <a href="services.html" class="block py-1">Our Capabilities</a>
+                                <a href="past-performance.html" class="block py-1">Past Performance</a>
+                             </div>
+                            <div>
+                                <h4 class="font-semibold text-white mb-2 uppercase tracking-wider">Resources</h4>
+                               <a href="privacy-policy.html" class="block py-1">Privacy Policy</a>
+                           </div>
+                        </nav>
+                    </div>
+                 </div>
+           </div>
+        </div>
+        <div class="footer-bottom">
+           <div class="container mx-auto px-4">
+               <div class="flex flex-col sm:flex-row items-center justify-between text-sm text-center sm:text-left">
+                    <p class="mb-2 sm:mb-0">© 2024 Deceris LLC. All Rights Reserved.</p>
+                   <p>DUNS: 962762477 | CAGE: 61PV6</p>
+               </div>
+           </div>
+        </div>
+    </footer>
+
+     <script>
+         document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.header-nav-list a');
+            const servicesLink = document.querySelector('.header-nav-list a[href="services.html"]');
+
+            navLinks.forEach(link => { link.classList.remove('active'); });
+            if (servicesLink) { servicesLink.classList.add('active'); }
+        });
+     </script>
+
+</body>
+</html>
